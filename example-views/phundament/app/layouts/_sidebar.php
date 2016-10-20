@@ -48,7 +48,7 @@ $menuItems = [];
 $favouriteMenuItems[] = ['label'=>'MAIN NAVIGATION', 'options'=>['class'=>'header']];
 $developerMenuItems = [];
 
-foreach (\dmstr\helpers\Metadata::getModules() as $name => $module) {
+foreach (\gudezi\helpers\Metadata::getModules() as $name => $module) {
     $role                        = $name;
 
     $defaultItem = [
@@ -66,7 +66,7 @@ foreach (\dmstr\helpers\Metadata::getModules() as $name => $module) {
     switch (true) {
         case (!empty($moduleConfigItem)):
             $moduleConfigItem            = array_merge($defaultItem, $moduleConfigItem);
-            $moduleConfigItem['visible'] = \dmstr\helpers\RouteAccess::can($moduleConfigItem['url']);
+            $moduleConfigItem['visible'] = \gudezi\helpers\RouteAccess::can($moduleConfigItem['url']);
             $favouriteMenuItems[]        = $moduleConfigItem;
             continue 2;
             break;
@@ -89,7 +89,7 @@ if (Yii::$app->user->identity && Yii::$app->user->identity->isAdmin) {
     ];
 }
 
-echo dmstr\widgets\Menu::widget([
+echo gudezi\widgets\Menu::widget([
     'options' => ['class' => 'sidebar-menu'],
     'items' => \yii\helpers\ArrayHelper::merge($favouriteMenuItems, $menuItems),
 ]);

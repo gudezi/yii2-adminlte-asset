@@ -1,5 +1,5 @@
 <?php
-namespace dmstr\web;
+namespace gudezi\web;
 
 use yii\base\Exception;
 use yii\web\AssetBundle as BaseAdminLteAsset;
@@ -10,12 +10,23 @@ use yii\web\AssetBundle as BaseAdminLteAsset;
  */
 class AdminLteAsset extends BaseAdminLteAsset
 {
-    public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
+    //public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
+    public $sourcePath = '@vendor/gudezi/adminlte/dist';
     public $css = [
-        'css/AdminLTE.min.css',
+        //'css/AdminLTE.min.css',
+
+         //'../bootstrap/css/bootstrap.min.css',
+         'css/font-awesome.min.css',
+         'css/font-awesome-animation.min.css',
+         'css/ionicons.min.css',
+         'css/AdminLTE.min.css',
+         'css/skins/skin-gudezi.min.css',
     ];
     public $js = [
-        'js/app.min.js'
+        'js/app.min.js',
+        'js/sideBarStateLocalStorage.min.js',
+        'js/sideBarStateLocalStorage.min.js',
+        'js/jquery.slimscroll.js'
     ];
     public $depends = [
         'rmrevin\yii\fontawesome\AssetBundle',
