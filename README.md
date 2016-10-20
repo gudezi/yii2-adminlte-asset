@@ -1,7 +1,7 @@
 AdminLTE Asset Bundle
 =====================
 
-*Backend UI for Yii2 Framework, based on [AdminLTE](https://github.com/almasaeed2010/AdminLTE)*
+*Backend UI for Yii2 Framework, based on [AdminLTE](https://github.com/gudezi/AdminLTE)*
 
 !["Yii2 AdminLTE Presentation"](https://cloud.githubusercontent.com/assets/874234/7603896/753228ee-f943-11e4-9d42-2a31b41eb42d.jpg)
 
@@ -16,7 +16,7 @@ Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-To install AdminLTE v1 run:
+To install AdminLTE v2 run:
 
 ```
 php composer.phar require gudezi/yii2-adminlte-asset "*"
@@ -68,7 +68,7 @@ Customization
 
 - Copy files from `vendor/gudezi/yii2-adminlte-asset/example-views/yiisoft/yii2-app` (or other theme) to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
-- Edit your views adhering to html markup `vendor/almasaeed2010/adminlte/pages`
+- Edit your views adhering to html markup `vendor/gudezi/adminlte/pages`
 
 ### Skins
 
