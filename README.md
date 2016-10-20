@@ -16,12 +16,6 @@ Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-To install AdminLTE v2 run:
-
-```
-php composer.phar require gudezi/yii2-adminlte-asset "*"
-```
-
 To install AdminLTE v1 run:
 
 ```
