@@ -1,5 +1,5 @@
 {
-    "name": "dmstr/yii2-adminlte-asset",
+    "name": "gudezi/yii2-adminlte-asset",
     "description": "AdminLTE backend theme asset bundle for Yii 2.0 Framework",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","adminlte","admin","theme","backend","asset","css","less"],
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dmstr\\": ""
+            "gudezi\\": ""
         }
     },
     "extra": {

@@ -19,13 +19,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install AdminLTE v2 run:
 
 ```
-php composer.phar require dmstr/yii2-adminlte-asset "2.*"
+php composer.phar require gudezi/yii2-adminlte-asset "*"
 ```
 
 To install AdminLTE v1 run:
 
 ```
-php composer.phar require dmstr/yii2-adminlte-asset "1.*"
+php composer.phar require gudezi/yii2-adminlte-asset "*"
 ```
 
 
@@ -42,7 +42,7 @@ For Yii 2 [Application Template](https://github.com/yiisoft/yii2-app-advanced) o
     'view' => [
          'theme' => [
              'pathMap' => [
-                '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+                '@app/views' => '@vendor/gudezi/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
              ],
          ],
     ],
@@ -57,7 +57,7 @@ For [Phundament 4](https://github.com/phundament/app)
     'view' => [
         'theme' => [
             'pathMap' => [
-                '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/phundament/app'
+                '@app/views' => '@vendor/gudezi/yii2-adminlte-asset/example-views/phundament/app'
             ],
         ],
     ],
@@ -72,7 +72,7 @@ Therefore it is recommended to **copy the views into your application** and adju
 Customization
 -------------
 
-- Copy files from `vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app` (or other theme) to `@app/views`.
+- Copy files from `vendor/gudezi/yii2-adminlte-asset/example-views/yiisoft/yii2-app` (or other theme) to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
 - Edit your views adhering to html markup `vendor/almasaeed2010/adminlte/pages`
 
@@ -84,7 +84,7 @@ By default the extension uses blue skin for AdminLTE. You can change it in confi
 'components' => [
     'assetManager' => [
         'bundles' => [
-            'dmstr\web\AdminLteAsset' => [
+            'gudezi\web\AdminLteAsset' => [
                 'skin' => 'skin-black',
             ],
         ],
@@ -94,7 +94,7 @@ By default the extension uses blue skin for AdminLTE. You can change it in confi
 
 And then just replace class of body `skin-blue`. You can use `AdminLteHelper::skinClass()` if you don't want to alter every view file when you change skin color. 
 ```html
-<body class="<?= \dmstr\helpers\AdminLteHelper::skinClass() ?>">
+<body class="<?= \gudezi\helpers\AdminLteHelper::skinClass() ?>">
 ```
 
 **Note:** Use `AdminLteHelper::skinClass()` only if you override the skin through configuration. Otherwise you will not get the correct css class of body.
@@ -173,5 +173,5 @@ Further Information
 
 For AdminLTE documentation, please read https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html
 
-> Namespacing rules follow the Yii 2.0 framework structure, eg. `dmstr\web` for the Asset Bundle.
+> Namespacing rules follow the Yii 2.0 framework structure, eg. `gudezi\web` for the Asset Bundle.
  
